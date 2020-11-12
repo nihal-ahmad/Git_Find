@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/bg-main.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.second_section{
+    width: 100%;
+    height: 100vh;
+}
+
+#logo{
+    height: 3em;
+    width: 3em;
+}
+
+ .bg-color.scrolled{
+     transition: 900ms ease;
+     background-color: #38AF9B;
+ }
+
