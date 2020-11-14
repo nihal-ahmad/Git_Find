@@ -6,18 +6,15 @@
     
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .header{
     width: 100%;
     height: 100vh;
-    background-image: url("images/bg-main.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+background-image: url("images/bg-main.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
 }
 
 .second_section{
@@ -34,4 +31,142 @@
      transition: 900ms ease;
      background-color: #38AF9B;
  }
+ 
+ .top_header{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
 
+ .heading_container{
+     padding-top: 15vh;
+     padding-right: 10vw;
+ }
+
+.main_heading{
+
+ text-transform: uppercase;
+padding-left: 7vw;
+ font-size: 5em;
+
+ font-family: 'Concert One', cursive;
+ position: relative;
+    -webkit-text-stroke: 0.3vw #383d52;
+}
+
+#main_para{
+    color: goldenrod;
+    font-family:'Raleway', sans-serif;
+    letter-spacing: 3px;
+    padding-left: 4vw;
+    font-size: 1em;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+}
+
+.arrowdown{
+    height: 7vh;
+    width: 10vw;
+    padding-left: 2.5vw;
+}
+
+#arrowdiv{
+    --animate-duration: 1.5s;
+}
+
+.attention{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #01fe87;
+}
+
+
+.main_heading:before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0%
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 4px solid #01fe87;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+ 
+@keyframes animate {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%,90% {
+        width: 80%;
+    }
+}
+
+.animate__animated.animate__fadeInBottomLeft {
+    --animate-duration: 2s;
+  }
+
+
+
+/* ******************Responsive Css ******************** */
+
+@media only screen and (max-width: 497px) and (min-width: 370px){
+#main_para{
+    padding-left: 12vw;
+}
+
+.arrowdown {
+ 
+   width: 15vw;
+   margin-left: 10vw;
+}
+
+}
+  
+@media only screen and (max-width: 430px) and (min-width: 380px){
+
+    @keyframes animate {
+        0%,10%,100% {
+            width: 0;
+        }
+        70%,90% {
+            width: 94%;
+        }
+    }
+}
+
+@media only screen and (max-width: 819px) and (min-width: 650px){
+
+    .arrowdown{
+
+        margin-left: 5vw;
+    }
+}
+
+@media only screen and (max-width: 870px) and (min-width: 820px){
+
+    .arrowdown{
+
+        margin-left: 3.5vw;
+    }
+}
+
+
+@media only screen and (max-width: 649px) and (min-width: 495px){
+.arrowdown{
+    margin-left: 6vw;
+}
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 880px){
+    .arrowdown{
+        margin-left: 2vw;
+    }
+    }
