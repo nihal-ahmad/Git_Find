@@ -105,7 +105,7 @@ padding-left: 7vw;
         width: 0;
     }
     70%,90% {
-        width: 70%;
+        width: 75%;
     }
 }
 
@@ -140,10 +140,7 @@ padding-left: 7vw;
             width: 94%;
         }
     }
-    .arrowdown{
-
-        margin-left: 13vw;
-    }
+  
 }
 
 @media only screen and (max-width: 819px) and (min-width: 650px){
