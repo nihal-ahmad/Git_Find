@@ -130,7 +130,7 @@ padding-left: 7vw;
 
 }
   
-@media only screen and (max-width: 430px) and (min-width: 380px){
+@media only screen and (max-width: 470px) and (min-width: 380px){
 
     @keyframes animate {
         0%,10%,100% {
