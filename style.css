@@ -1,18 +1,19 @@
 @import "searchbox.css";
 
-*{
+body,html,div,section,p{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-  
+ 
 }
 
-/* body {
-    overflow-x: hidden !important;
-} */
+body {
+    max-width: 100vw;
+}
 
 .header{
+    overflow-y: none;
     width: 100vw;
     height: 100vh;
 background-image: url("images/bg-main.jpg");
@@ -22,7 +23,8 @@ background-size: 100% 100% ;
 }
 
 .second_section{
-    width: 100%;
+    overflow-y: none;
+    width: 100vw;
     height: 100vh;
   
 }
@@ -45,15 +47,12 @@ background-size: 100% 100% ;
      justify-content: center;
  }
 
- .heading_container{
-     padding-top: 15vh;
-     padding-right: 10vw;
- }
+
 
 .main_heading{
 
  text-transform: uppercase;
-padding-left: 7vw;
+/* padding-left: 1.2em; */
  font-size: 5em;
 
  font-family: 'Concert One', cursive;
@@ -64,29 +63,25 @@ padding-left: 7vw;
 #main_para{
     color: goldenrod;
     font-family:'Raleway', sans-serif;
-    letter-spacing: 3px;
-    padding-left: 4vw;
+    letter-spacing: .3em;
+    /* padding-left: 4vw; */
     font-size: 1em;
 }
 
-.arrow{
-    display: flex;
-    justify-content: center;
-}
 
 .arrowdown{
     height: 7vh;
     width: 10vw;
-    padding-left: 2.5vw;
+    /* padding-left: 2.5vw; */
 }
 
-#arrowdiv{
+#arrowdiv,#image-div{
     --animate-duration: 1.5s;
 }
 
 .attention{
     text-transform: uppercase;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #01fe87;
     
 }
@@ -96,7 +91,7 @@ padding-left: 7vw;
     content: attr(data-text);
     position: absolute;
     top: 0;
-    left: 40;
+    left: 0;
     width: 0;
     height: 100%;
     color: #01fe87;
@@ -110,7 +105,7 @@ padding-left: 7vw;
         width: 0;
     }
     70%,90% {
-        width: 75%;
+        width: 100%;
     }
 }
 
@@ -119,10 +114,7 @@ padding-left: 7vw;
   }
 
 .search-head{
-    width: 100vw;
-text-align: center;
-font-weight: bold;
-margin-top: 3vh;
+  font-weight: bolder;
 }
 
 .search-head-h1{
@@ -132,14 +124,12 @@ margin-top: 3vh;
 /* ******************Responsive Css ******************** */
 
 @media only screen and (max-width: 497px) and (min-width: 370px){
-#main_para{
-    padding-left: 12vw;
-}
+
 
 .arrowdown {
  
    width: 15vw;
-   margin-left: 12vw;
+   /* margin-left: 12vw; */
 }
 
 
@@ -147,32 +137,31 @@ margin-top: 3vh;
   
 @media only screen and (max-width: 470px) and (min-width: 380px){
 
-    @keyframes animate {
+    /* @keyframes animate {
         0%,10%,100% {
             width: 0;
         }
         70%,90% {
             width: 94%;
         }
-    }
-    .search-head-h1{
-font-size: larger;
-    }
+    } */
+    
 
 .search{
-width: 15vw;
-height: 14vh;
+width: 5em;
+height: 5em;
     }
 .search:before{
-    width: 1.5vw;
+    width: .3em;
 }
 
 .search-icon{
-    width: 5vw;
-  height: 3vh;
-  border-radius: 30px;
-  margin-top: 2vh;
-  margin-left: 8vw;
+    width: 1.7em;
+  height: 1.8em;
+  border-radius: 1em;
+  /* padding-left: 2em; */
+  margin-top: -.7em;
+  margin-left: 3em;
 }
 
 .search-icon:before{
@@ -182,6 +171,7 @@ height: 14vh;
     right: -2.5vw;
 }
 
+
 .search-icon:after {
     width: 1vw;
     height: 3vh;
@@ -189,7 +179,28 @@ height: 14vh;
     right: -2.5vw;
 }
 .search.open{
-    width: 70vw;
+    width: 20em;
+}
+.open .search-icon{
+    margin: 0;
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 2em;
+    /* padding-right: 5em; */
+    margin-left: 3em;
+    margin-top: -.5em;
+}
+
+.open .search-icon:before{
+    right: .7em;
+    top: .68em;
+    height: 1em;
+}
+
+.open .search-icon:after {
+    right: .7em;
+    top: .18em;
+    height: 1em;
 }
 
 .search-box{
@@ -200,30 +211,19 @@ height: 14vh;
 
 @media only screen and (max-width: 819px) and (min-width: 650px){
 
-    .arrowdown{
-
-        margin-left: 5vw;
-    }
+   
 }
 
 @media only screen and (max-width: 870px) and (min-width: 820px){
 
-    .arrowdown{
-
-        margin-left: 3.5vw;
-    }
 }
 
 
 @media only screen and (max-width: 649px) and (min-width: 495px){
-.arrowdown{
-    margin-left: 6vw;
-}
+
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 880px){
-    .arrowdown{
-        margin-left: 2vw;
-    }
+  
     }
   

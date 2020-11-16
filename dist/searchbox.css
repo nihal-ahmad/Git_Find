@@ -5,25 +5,20 @@
   background-color: #242628;
   position: relative;
   overflow: hidden;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
 .search:before {
-  content: '';
+  content: "";
   display: block;
-  width: .5em;
+  width: 0.5em;
   height: 100%;
   position: relative;
   background-color: #00FEDE;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
 .search.open {
   width: 50rem;
 }
-
 .search.open:before {
   height: 25em;
   position: absolute;
@@ -32,15 +27,13 @@
 .search-box {
   width: 25em;
   height: 100%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
   background: transparent;
   color: beige;
-  padding: .5em 5em .5em 2em;
+  padding: 0.5em 5em 0.5em 2em;
   font-size: 2em;
 }
-
 .search-box:focus {
   outline: none;
 }
@@ -64,60 +57,47 @@
   display: block;
   position: relative;
   margin-left: 1.5em;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
 .search-icon:before {
-  content: '';
-  width: .42em;
+  content: "";
+  width: 0.42em;
   height: 1em;
   position: absolute;
-  right: -.4em;
+  right: -0.4em;
   top: 1.4em;
   display: block;
   background-color: #00FEDE;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transition: all 0.5s ease;
+  transform: rotate(-45deg);
   transition: all 0.5s ease;
 }
-
 .search-icon:after {
-  content: '';
-  width: .4em;
+  content: "";
+  width: 0.4em;
   height: 1rem;
   position: absolute;
   right: -1em;
   top: 2.05em;
   display: block;
   background-color: #00FEDE;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transition: all 0.5s ease;
+  transform: rotate(-45deg);
   transition: all 0.5s ease;
 }
-
 .open .search-icon {
   margin: 0;
   width: 4em;
   height: 4em;
   border-radius: 5em;
 }
-
 .open .search-icon:before {
-  -webkit-transform: rotate(52deg);
-          transform: rotate(52deg);
+  transform: rotate(52deg);
   right: 1.4em;
   top: 1.5em;
   height: 1.5em;
 }
-
 .open .search-icon:after {
-  -webkit-transform: rotate(-230deg);
-          transform: rotate(-230deg);
+  transform: rotate(-230deg);
   right: 1.4em;
-  top: .7em;
+  top: 0.7em;
   height: 1.5em;
 }
-/*# sourceMappingURL=searchbox.css.map */
