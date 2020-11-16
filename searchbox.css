@@ -1,0 +1,124 @@
+.search {
+  width: 8vw;
+  height: 16vh;
+  margin: 10vh auto 0;
+  background-color: #242628;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.search:before {
+  content: '';
+  display: block;
+  width: .5vw;
+  height: 100%;
+  position: relative;
+  background-color: #00FEDE;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.search.open {
+  width: 40vw;
+}
+
+.search.open:before {
+  height: 60px;
+  margin: 20px 0 20px 30px;
+  position: absolute;
+}
+
+.search-box {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background: transparent;
+  color: beige;
+  padding: 1vh 10vw 1vh 4vw;
+  font-size: 5vh;
+}
+
+.search-box:focus {
+  outline: none;
+}
+
+.search-button {
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 3vw;
+  height: 6vh;
+  border-radius: 22px;
+  border: 3px solid #00FEDE;
+  display: block;
+  position: relative;
+  margin-left: 3px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.search-icon:before {
+  content: '';
+  width: 3px;
+  height: 15px;
+  position: absolute;
+  right: -2px;
+  top: 30px;
+  display: block;
+  background-color: #00FEDE;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.search-icon:after {
+  content: '';
+  width: 3px;
+  height: 15px;
+  position: absolute;
+  right: -12px;
+  top: 40px;
+  display: block;
+  background-color: #00FEDE;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.open .search-icon {
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
+.open .search-icon:before {
+  -webkit-transform: rotate(52deg);
+          transform: rotate(52deg);
+  right: 22px;
+  top: 23px;
+  height: 18px;
+}
+
+.open .search-icon:after {
+  -webkit-transform: rotate(-230deg);
+          transform: rotate(-230deg);
+  right: 22px;
+  top: 13px;
+  height: 18px;
+}
+/*# sourceMappingURL=searchbox.css.map */
