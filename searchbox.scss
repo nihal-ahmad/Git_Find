@@ -66,6 +66,7 @@ $transition: all .5s ease;
   display: block;
   position: relative;
   margin-left: 1.5em;
+  
   transition: $transition;
   &:before {
     content: '';
@@ -92,7 +93,7 @@ $transition: all .5s ease;
     transition: $transition;
   }
   .open & {
-    margin: 0;
+    margin-top: -.6em;
     width: 4em;
     height: 4em;
     border-radius: 5em;
