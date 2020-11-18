@@ -12,11 +12,19 @@ class UI {
     <a href="${user.html_url}" target="_blank" class="btn btn-primary btn-block mb-3">View Profile</a>
      
     </div>
+<<<<<<< HEAD
     <div class="col-md-9 lead" >
     <span class="badge  badge-primary "><a href="#" style="color: black; ">Public Repos: ${user.public_repos}</a></span>
     <span class="badge  badge-danger"><a href="#" style="color: black; ">Public Gists: ${user.public_gists}</a></span>
     <span class="badge  badge-secondary"><a href="#" style="color: black; ">Followers: ${user.followers}</a></span>
     <span class="badge  badge-success"><a href="#" style="color: black; ">Following: ${user.following}</a></span>
+=======
+    <div class="col-md-9 lead" style="color:black;">
+    <span class="badge  badge-primary " style="color:black;  ">Public Repos: ${user.public_repos}</span>
+    <span class="badge  badge-danger " style="color:black; ">Public Gists: ${user.public_gists}</span>
+    <span class="badge  badge-secondary " style="color:black; ">Followers: ${user.followers}</span>
+    <span class="badge  badge-success " style="color:black; ">Following: ${user.following}</span>
+>>>>>>> d04d264fc1ac8b2979f8907ce2f6a1ff26a385da
     <br><br>
     <ul class="list-group">
     <li class="list-group-item " style="font-weight:bold; color: #242628;">
@@ -64,9 +72,15 @@ class UI {
     </div>
     <div class="lead">
     <div class="col-md-6">
+<<<<<<< HEAD
     <span class="badge  badge-primary " style="color: #000;"><a href="#" style="color: black; ">STARS: ${repo.stargazers_count}</a></span>
     <span class="badge  badge-danger " style="color: #000; "><a href="#" style="color: black; ">WATCHERS: ${repo.watchers_count}</a></span>
     <span class="badge  badge-success " style="color: #000; "><a href="#" style="color: black; ">FORKS: ${repo.forms_count}</a></span>
+=======
+    <span class="badge  badge-primary " style="color:black;">STARS: ${repo.stargazers_count}</span>
+    <span class="badge  badge-danger " style="color:black; ">WATCHERS: ${repo.watchers_count}</span>
+    <span class="badge  badge-success " style="color:black; ">FORKS: ${repo.forms_count}</span>
+>>>>>>> d04d264fc1ac8b2979f8907ce2f6a1ff26a385da
     </div>
     </div>
     </div>
