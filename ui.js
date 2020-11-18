@@ -51,6 +51,7 @@ class UI {
 
   clearProfile() {
     this.profile.innerHTML = "";
+    this.repo.innerHTML = "";
   }
 
   showRepos(repo) {
