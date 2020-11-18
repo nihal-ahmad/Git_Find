@@ -4,7 +4,7 @@ Git_Find is an amazing website giving users the freedom of getting anyone's Gith
 
 ## About
 
-This project was made during learning phase of <b><i>Javascript APIs<i><b>.It was an implementation of what I learned about usage of api and how to fetch and display APIs data.
+This project was made during learning phase of <b><i>Javascript APIs<i></b>.It was an implementation of what I learned about usage of api and how to fetch and display APIs data.
 Overall , this project was fun.
 
 ## Usage
