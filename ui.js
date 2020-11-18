@@ -14,10 +14,10 @@ class UI {
     </div>
 
     <div class="col-md-9 lead" >
-    <span class="badge  badge-primary "><a href="#" style="color: black; ">Public Repos: ${user.public_repos}</a></span>
-    <span class="badge  badge-danger"><a href="#" style="color: black; ">Public Gists: ${user.public_gists}</a></span>
-    <span class="badge  badge-secondary"><a href="#" style="color: black; ">Followers: ${user.followers}</a></span>
-    <span class="badge  badge-success"><a href="#" style="color: black; ">Following: ${user.following}</a></span>
+    <span class="badge  badge-primary "><a  style="color: black; ">Public Repos: ${user.public_repos}</a></span>
+    <span class="badge  badge-danger"><a  style="color: black; ">Public Gists: ${user.public_gists}</a></span>
+    <span class="badge  badge-secondary"><a  style="color: black; ">Followers: ${user.followers}</a></span>
+    <span class="badge  badge-success"><a  style="color: black; ">Following: ${user.following}</a></span>
 
     <br><br>
     <ul class="list-group">
@@ -67,9 +67,9 @@ class UI {
     <div class="lead">
     <div class="col-md-6">
 
-    <span class="badge  badge-primary " style="color: #000;"><a href="#" style="color: black; ">STARS: ${repo.stargazers_count}</a></span>
-    <span class="badge  badge-danger " style="color: #000; "><a href="#" style="color: black; ">WATCHERS: ${repo.watchers_count}</a></span>
-    <span class="badge  badge-success " style="color: #000; "><a href="#" style="color: black; ">FORKS: ${repo.forms_count}</a></span>
+    <span class="badge  badge-primary " style="color: #000;"><a  style="color: black; ">STARS: ${repo.stargazers_count}</a></span>
+    <span class="badge  badge-danger " style="color: #000; "><a  style="color: black; ">WATCHERS: ${repo.watchers_count}</a></span>
+    <span class="badge  badge-success " style="color: #000; "><a  style="color: black; ">FORKS: ${repo.forms_count}</a></span>
 
     </div>
     </div>
