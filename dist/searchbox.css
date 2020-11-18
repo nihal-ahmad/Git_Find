@@ -24,7 +24,7 @@
   position: absolute;
 }
 
-.search-box {
+#search-box {
   width: 25em;
   height: 100%;
   box-shadow: none;
@@ -34,7 +34,7 @@
   padding: 0.5em 5em 0.5em 2em;
   font-size: 2em;
 }
-.search-box:focus {
+#search-box:focus {
   outline: none;
 }
 

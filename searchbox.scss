@@ -6,6 +6,7 @@ $transition: all .5s ease;
 
 
 .search {
+ 
   width: 8em;
   height: 7em;
   margin: 2em auto 0;
@@ -32,7 +33,7 @@ $transition: all .5s ease;
   }
 }
 
-.search-box {
+#search-box {
   width: 25em;
   height: 100%;
   box-shadow: none;

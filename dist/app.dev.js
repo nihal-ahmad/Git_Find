@@ -1,27 +1,25 @@
+"use strict";
+
 // **********************navbar color change**********************
 $(window).scroll(function () {
   $("nav").toggleClass("scrolled", $(this).scrollTop() > 530);
-});
-
-// ****************************************************************
-
+}); // ****************************************************************
 // ***********************Invoke Search Box ********************
+
 $(".search-button").click(function () {
   $(this).parent().toggleClass("open");
-});
-// *************************************************************
+}); // *************************************************************
 
-const github = new Github();
-const ui = new UI();
-// Search Input
-const searchUser = document.getElementById("search-box");
+var github = new Github();
+var ui = new UI(); // Search Input
 
-// Search Input Event Listener
-searchUser.addEventListener("keyup", (e) => {
-  const userText = e.target.value;
+var searchUser = document.getElementById("search-box"); // Search Input Event Listener
+
+searchUser.addEventListener("keyup", function (e) {
+  var userText = e.target.value;
 
   if (userText !== "") {
-    github.getUser(userText).then((data) => {
+    github.getUser(userText).then(function (data) {
       if (data.profile.message === "Not Found") {
         // swal({
         //   title: "OOPS!",
@@ -29,8 +27,7 @@ searchUser.addEventListener("keyup", (e) => {
         //   icon: "error",
         //   timer: 1000,
         // });
-
-        ui.showAlert(`${userText} not found`, "alert alert-danger");
+        ui.showAlert("".concat(userText, " not found"), "alert alert-danger");
       } else {
         ui.showProfile(data.profile);
         ui.showRepos(data.repo);

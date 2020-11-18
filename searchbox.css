@@ -29,7 +29,7 @@
   position: absolute;
 }
 
-.search-box {
+#search-box {
   width: 25em;
   height: 100%;
   -webkit-box-shadow: none;
@@ -41,7 +41,7 @@
   font-size: 2em;
 }
 
-.search-box:focus {
+#search-box:focus {
   outline: none;
 }
 

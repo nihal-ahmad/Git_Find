@@ -8,13 +8,11 @@ body,html,div,section,p{
  
 }
 
-body {
-    /* max-width: 100vw; */
-}
+
 
 .header{
     overflow-y: none;
-    /* width: 100vw; */
+    
     height: 100vh;
 background-image: url("images/bg-main.jpg");
 background-repeat: no-repeat;
@@ -24,8 +22,8 @@ background-size: 100% 100% ;
 
 .second_section{
     overflow-y: none;
-    /* width: 100vw; */
-    height: 100vh;
+    
+    /* height: 100vh; */
   
 }
 
@@ -118,9 +116,19 @@ background-size: 100% 100% ;
 }
 
 .search-head-h1{
-    
+    background-color: goldenrod;
+    border-radius: .5em;
     text-transform: uppercase;
 }
+
+.page-heading{
+    font-size: 2em;
+    font-weight: bold;
+    /* width: 50%; */
+    background-color: #38AF9B;
+    border-radius: .5em;
+}
+
 /* ******************Responsive Css ******************** */
 
 @media only screen and (max-width: 497px) and (min-width: 370px){
@@ -195,10 +203,12 @@ height: 5em;
     height: 1em;
 }
 
-.search-box{
+#search-box{
     padding: 2vw 20vw 2vw 12vw;
     font-size: larger;
 }
+
+
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 600px){
@@ -206,7 +216,7 @@ height: 5em;
     .search.open {
         width: 30em;
       }
-      .search-box{
+      #search-box{
         padding: .4em 14em .5em 2em;
       }
 }
@@ -215,7 +225,7 @@ height: 5em;
     .search.open {
         width: 25em;
       }
-      .search-box{
+      #search-box{
         padding: .4em 15em .5em 2em;
       }
 }
